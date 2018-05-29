@@ -140,7 +140,9 @@ class QuestionIndexViewTests(TestCase):
             ['<Question: Past question 2.>', '<Question: Past question 1.>']
         )
 
+        """ TEST USING FACTORY_BOY !!! """
 
+"""
 class QuestionFactory(factory.DjangoModelFactory):
     class Meta:
         model = Question
@@ -153,13 +155,10 @@ class QuestionFactory(factory.DjangoModelFactory):
 
 class QuestionTestCase(TestCase):
     def test_was_published_recently_with_future_question(self):
-        """
-        was_published_recently() returns False for questions whose pub_date
-        is in the future.
-        """
+       
         question = QuestionFactory.create()
         print(question.pub_date)
         print(question.question_text)
        # assert question.question_text=="jitvan", "should have been this"
-
+"""
 
